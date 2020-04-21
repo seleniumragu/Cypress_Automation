@@ -1,0 +1,9 @@
+{
+  "projectId": "j3bhg8",
+  "reporter": "mochawesome",
+  "reporterOptions": {
+    "overwrite": false,
+    "html": true,
+    "json": true
+  }
+}

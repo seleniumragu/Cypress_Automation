@@ -1,0 +1,33 @@
+{
+  "name": "cypress-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "open": "cypress open",
+    "run": "cypress run",
+    "run_page_load": "node_modules\\.bin\\cypress run --config pageLoadTimeout=100000",
+    "run_all": "node_modules\\.bin\\cypress run",
+    "run-headed": "cypress run",
+    "record": "cypress run --record --key d7a30a9f-99a2-4c8a-857b-0b3c5ea28369",
+    "specific-run": "cypress run --headed --spec cypress/integration/ui-testing/homepage_search_spec.js --reporter mocha-allure-reporter",
+    "specific-run_page_load": "cypress run --headed --spec cypress/integration/ui-testing/ui_elements_spec.js --browser chrome --config viewportWidth=800,viewportHeight=500",
+    "chrome": "cypress run --browser chrome",
+    "firefox": "cypress run --browser firefox",
+    "electron": "cypress run --browser electron",
+    "test_mocha": "mocha --reporter mocha-allure-reporter"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^4.3.0",
+    "mocha": "^7.1.1",
+    "mochawesome": "^5.0.0",
+    "mochawesome-merge": "^4.0.3",
+    "mochawesome-report-generator": "^4.1.0"
+  },
+  "dependencies": {
+    "mocha-allure-reporter": "^1.4.0"
+  }
+}
