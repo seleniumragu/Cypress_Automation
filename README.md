@@ -2,8 +2,8 @@
 ## Cypress Automation Project
 
 ### Run from terminal command
-cypress open
-Click on your file name to run from TestRunner
+1. cypress open
+2. Click on your file name to run from TestRunner
 
 ### Run Command from Docker
 docker build -t cypress .
